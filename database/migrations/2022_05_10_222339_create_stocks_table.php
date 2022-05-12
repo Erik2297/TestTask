@@ -15,7 +15,10 @@ class CreateStocksTable extends Migration
     {
         Schema::create('stocks', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('company');
+            $table->double('unit_price', 10, 2);
+            $table->dateTime('created_at')->useCurrent();
+            $table->dateTime('updated_at')->nullable();
         });
     }
 

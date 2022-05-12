@@ -23,6 +23,9 @@ class Kernel extends ConsoleKernel
      *
      * @return void
      */
+    protected $commands = [
+        \App\Console\Commands\CreateDatabase::class
+    ];
     protected function commands()
     {
         $this->load(__DIR__.'/Commands');

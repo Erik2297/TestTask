@@ -15,7 +15,10 @@ class CreateClientsTable extends Migration
     {
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('name');
+            $table->double('cash', 10, 2)->default(1000.00);
+            $table->dateTime('created_at')->useCurrent();
+            $table->dateTime('updated_at')->nullable();
         });
     }
 
