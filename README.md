@@ -38,6 +38,7 @@ stock management web app
 ### Ctrl+Click below to see the website.
 http://127.0.0.1:8000/
 
+## information about database construction and image of ERD you can find in databaseInfo folder in the project
 
 ## for testing simply run this command
 *** php artisan test ***
