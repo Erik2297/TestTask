@@ -17,11 +17,11 @@ class ClientsSeeder extends Seeder
         Clients::insert([
             [
                 'name' => 'Client 1',
-                'cash' => 1000
+                'cash' => 865
             ],
             [
                 'name' => 'Client 2',
-                'cash' => 1000
+                'cash' => 940
             ],
             [
                 'name' => 'Client 3',

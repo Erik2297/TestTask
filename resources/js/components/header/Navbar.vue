@@ -11,6 +11,7 @@
                     <router-link :class="'nav-item nav-link '+(this.$router.name == '/' ? ' active' : '')" to="/">Home</router-link>
                     <router-link :class="'nav-item nav-link '+(this.$router.name == '/stocks' ? ' active' : '')" to="/stocks">Stocks</router-link>
                     <router-link :class="'nav-item nav-link '+(this.$router.name == '/clients' ? ' active' : '')" to="/clients">Clients</router-link>
+                    <router-link :class="'nav-item nav-link '+(this.$router.name == '/purchase_stock' ? ' active' : '')" to="/purchase_stock">Purchase a Stock</router-link>
                 </div>
             </div>
         </nav>

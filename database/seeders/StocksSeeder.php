@@ -17,15 +17,15 @@ class StocksSeeder extends Seeder
         Stocks::insert([
             [
                 'company' => 'Company 1',
-                'unit_price' => 0.3
+                'unit_price' => 0.7
             ],
             [
                 'company' => 'Company 2',
-                'unit_price' => 1.00
+                'unit_price' => 0.4
             ],
             [
                 'company' => 'Company 3',
-                'unit_price' => 2.00
+                'unit_price' => 2.0
             ],
         ]);
     }

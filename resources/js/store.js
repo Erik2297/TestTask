@@ -4,7 +4,7 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
-  count: 123456789
+
 }
 
 const mutations = {
