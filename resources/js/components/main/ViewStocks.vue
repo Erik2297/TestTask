@@ -50,7 +50,7 @@
                             </p>
                             <p :class="'text-right text-'+(info.performance > 0 ? 'success' : info.performance == 0 ? 'dark' : 'danger')">
                                 {{ info.performance > 0 ? ' + ' : info.performance == 0 ? '' : ' - ' }}
-                                &euro; {{ Math.abs(info.performance).toFixed(2) }}
+                                {{ Math.abs(info.performance).toFixed(2) }} %
                             </p>
                             <p class="text-right text-dark">
                                 &euro; {{ Math.abs(info.cashbalance).toFixed(2) }}
@@ -90,7 +90,7 @@ export default {
                     res.data.stocks.map(item => {
                         item.gainorloss = (item.stock.unit_price - item.purchase_price) * item.volume
                         this.info.total += +item.gainorloss
-                        this.info.invested += +item.purchase_price
+                        this.info.invested += +item.purchase_price * item.volume
                     })
                     this.info.performance = (this.info.total / this.info.invested) * 100
                     this.stocks = res.data.stocks

@@ -8,30 +8,30 @@ stock management web app
 *** composer install *** 
 ### for installing laravel dependencies manager
 
-## Step 3
+## Step 2
 *** create new .env file from .env.example file ***
 
-## Step 4
+## Step 3
 *** php artisan key:generate *** 
 ### for generating app key
 
-## Step 5
+## Step 4
 *** php artisan db:create ***
 ### for creating database
 
-## Step 6
+## Step 5
 *** php artisan migrate:refresh --seed *** 
 ### for creating tables and adding some data
 
-## Step 7
+## Step 6
 *** npm install *** 
 ### for installing node-modules
 
-## Step 8
+## Step 7
 *** npm run prod ***
 ### for creating production dependencies for project
 
-## Step 9
+## Step 8
 *** php artisan serve *** 
 ### for starting laravel development server
 
